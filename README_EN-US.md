@@ -6,10 +6,10 @@ The 'Drugstore System' is a project developed in the second module (Object Orien
 
 ## How to run the app?
 
-First of all, make sure you have [Git](https://git-scm.com/downloads) installed on your machine. Then, open Git Bash (Windows) or Terminal (Linux/macOS) and run:
+First of all, make sure you have [Git](https://git-scm.com/downloads) installed on your machine. Then, open Git Bash (Windows) or Terminal (Linux/macOS) and type:
 
 ```
 git clone https://github.com/Luizfelz/sistema-farmacia-projeto
 ```
 
-When the download is complete, enter `python app.py` to run the app.
+When the download is complete, type `python app.py` to run the app.
