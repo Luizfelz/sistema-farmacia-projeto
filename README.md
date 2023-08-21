@@ -1,6 +1,6 @@
 # Sistema Farmácia - Projeto
 
-[EN-US](https://github.com/Luizfelz/forca-desafio-santander-coders/blob/main/README_EN-US.md)
+[EN-US](https://github.com/Luizfelz/sistema-farmacia-projeto/blob/main/README_EN-US.md)
 
 O 'Sistema Farmácia' é um projeto desenvolvido no segundo módulo (Programação Orientada a Objetos - POO) do programa Santander Coders, com objetivo de testar os conhecimentos do aluno sobre POO.
 

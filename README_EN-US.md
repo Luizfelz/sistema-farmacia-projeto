@@ -1,6 +1,6 @@
 # Drugstore System - Project
 
-[PT-BR](https://github.com/Luizfelz/forca-desafio-santander-coders)
+[PT-BR](https://github.com/Luizfelz/sistema-farmacia-projeto)
 
 The 'Drugstore System' is a project developed in the second module (Object Oriented Programming - OOP) of the Satander Coders program, with the aim of testing the student's knowledge of OOP.
 
