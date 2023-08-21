@@ -2,6 +2,7 @@ from biblioteca.cliente import Cliente
 from datetime import datetime
 
 TAMANHO_VALIDO_DE_CPF = 11
+TAMANHO_VALIDO_PARA_ANO_NASCIMENTO = 4
 
 class CadastroCliente:
 
@@ -27,10 +28,13 @@ class CadastroCliente:
             data_nascimento_valida = False
             while not data_nascimento_valida:
                 data_nascimento = input('Digite a data de nascimento do cliente [ex: 01/12/1900]: ').split('/')
-                try:
-                    data_nascimento = datetime(int(data_nascimento[2]), int(data_nascimento[1]), int(data_nascimento[0]))
-                    data_nascimento_valida = True
-                except:
+                if len(data_nascimento[2]) == TAMANHO_VALIDO_PARA_ANO_NASCIMENTO:
+                    try:
+                        data_nascimento = datetime(int(data_nascimento[2]), int(data_nascimento[1]), int(data_nascimento[0]))
+                        data_nascimento_valida = True
+                    except:
+                        print('\nData de nascimento inválida. Verifique o que foi digitado!\n')
+                else:
                     print('\nData de nascimento inválida. Verifique o que foi digitado!\n')
             novo_cliente = Cliente(nome, data_nascimento, cpf)
             CadastroCliente.cadastros_clientes_dict[cpf] = novo_cliente
