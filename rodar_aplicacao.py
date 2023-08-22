@@ -13,6 +13,7 @@ def rodar_aplicacao():
         opcao_do_menu = int(input('Digite uma opção: '))
         limpar_prompt()
         
+        # menu clientes
         if opcao_do_menu == 1:
             rodar_codigo = True
             while rodar_codigo:
@@ -42,6 +43,7 @@ def rodar_aplicacao():
                 else:
                     print('Opção digitada inválida!\n')
         
+        # menu medicamentos
         elif opcao_do_menu == 2:
             rodar_codigo = True
             while rodar_codigo:
@@ -62,6 +64,7 @@ def rodar_aplicacao():
                 else:
                     print('Opção digitada inválida!\n')
         
+        # menu laboratórios
         elif opcao_do_menu == 3:
             rodar_codigo = True
             while rodar_codigo:
@@ -82,6 +85,7 @@ def rodar_aplicacao():
                 else:
                     print('Opção digitada inválida!\n')
         
+        # menu vendas
         elif opcao_do_menu == 4:
             rodar_codigo = True
             while rodar_codigo:
@@ -102,6 +106,7 @@ def rodar_aplicacao():
                 else:
                     print('Opção digitada inválida!\n')
         
+        # menu relatórios
         elif opcao_do_menu == 5:
            rodar_codigo = True
            while rodar_codigo:
@@ -136,6 +141,7 @@ def rodar_aplicacao():
               else:
                   print('Opção digitada inválida!\n')
         
+        # finalizar programa
         elif opcao_do_menu == 0:
             print('=== Finalização do programa... ===\n')
             imprimir_relatório = input('Deseja imprimir o relatório do dia [S | N]? ').lower()
@@ -145,6 +151,7 @@ def rodar_aplicacao():
                 print('\n=== Programa finalizado! ===\n')
         else:
             print('Opção inválida!\n')
+
 
 def solicitar_relatorio_atendimento_do_dia():
     medicamento_mais_vendido = CadastroVenda.medicamento_mais_vendido_no_dia
